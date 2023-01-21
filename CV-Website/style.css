@@ -1,0 +1,22 @@
+*{
+background-color: black;
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+border: 2px dotted greenyellow;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header > logo {
+    order: 1;
+}
+
+.header > links {
+    order: 2;
+    direction: ltr;
+}
