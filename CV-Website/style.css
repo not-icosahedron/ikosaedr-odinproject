@@ -1,34 +1,39 @@
-/* this is some magical font-importing.  
-you'll learn about it later. */
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
-
+*{
+  background-color: transparent;
+}
 body {
   margin: 0;
-  background: #eee;
-  font-family: Besley, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  height:100%;
+  width:100%;
 }
 
 .header {
-  background: white;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  background: #252525;
 
   display: flex;
   justify-content: space-between;
   padding: 7px;
 }
 
-.first-half{
+.left{
   display: flex;
   align-items: center;
   margin-left: 10px;
   gap: 10px;
+
+  border: none;
+  border-radius: 8px;
+  background: white;
+  padding: 8px 24px;
 }
 
-.second-half{
+.right{
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-right: 10px;
 }
 
 
@@ -41,10 +46,10 @@ body {
 }
 
 .logo {
-  color: rebeccapurple;
-  font-size: 32px;
-  font-weight: 900;
-  font-style: italic;
+  min-width: 10px;
+  margin-right: 12px;
+  
+  background: transparent;
 }
 
 button {
@@ -53,12 +58,15 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  font-size: 150%;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
-  color: rebeccapurple;
+  color: grey;
+  font-weight: bold;
+  flex-wrap: nowrap;
 }
 
 ul {
@@ -68,4 +76,24 @@ ul {
   margin: 0;
   padding: 0;
   gap: 10px;
+}
+
+section {
+    display: block;
+    background: #252525;
+    height:100%;
+    width:100%;
+    padding: 60px;
+    padding-left: 10%;
+    box-sizing:border-box;
+}
+
+.title-page{
+  font-size:8vw;
+  color: beige;
+}
+
+.subtitle{
+  font-size: 3vw;
+  color: beige;
 }
